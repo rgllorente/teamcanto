@@ -1,42 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>El Canto del Pádel</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>El Canto del Pádel - Liga PADELCYL 2026</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; }
+        header { background: #1e90ff; color: white; padding: 20px; text-align: center; }
+        h2 { color: #1e90ff; border-bottom: 2px solid #1e90ff; padding-bottom: 5px; }
+        .container { width: 90%; max-width: 1100px; margin: auto; background: white; padding: 20px; }
+
+        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        table, th, td { border: 1px solid #ccc; }
+        th, td { padding: 10px; text-align: left; }
+        th { background: #e8f3ff; }
+
+        .btn {
+            background: #1e90ff; color: white; padding: 8px 15px;
+            border-radius: 6px; text-decoration: none; font-size: 14px;
+        }
+        .logo { width: 200px; margin-bottom: 10px; }
+        .calendar-img { width: 100%; border-radius: 10px; margin-bottom: 20px; }
+        iframe { width: 100%; height: 900px; border: none; }
+    </style>
 </head>
 <body>
+
 <header>
-<h1>🎾 El Canto del Pádel</h1>
-<p>3ª Categoría · Grupo E · Liga PadelCyL</p>
+    <img src="logo.png" class="logo" alt="Logo El Canto del Pádel">
+    <h1>EL CANTO DEL PÁDEL</h1>
+    <h3>Liga PADELCYL 2026</h3>
 </header>
 
-<main>
-<h2>Calendario</h2>
+<div class="container">
 
-<section class="jornada">
-<h3>Jornada 1</h3>
-<ul>
-<li><a target="_blank" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=1&Partido=1&Grupo=31090">Partido 1</a></li>
-<li><a target="_blank" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=1&Partido=2&Grupo=31090">Partido 2</a></li>
-<li><a target="_blank" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=1&Partido=3&Grupo=31090">Partido 3</a></li>
-</ul>
-</section>
+    <!-- Imagen simplificada del calendario -->
+    <img src="calendario.png" class="calendar-img" alt="Calendario simplificado">
 
-<section class="jornada">
-<h3>Jornada 2–10</h3>
-<p>Incluidas con enlaces directos a cada partido.</p>
-</section>
+    <h2>📅 Jornadas del equipo</h2>
 
-<a class="btn" target="_blank"
-href="https://padelfederacion.es/Paginas/CYL/Ligas_Clasificacion.asp?Liga=27991&Grupo=31090">
-Ver clasificación oficial
-</a>
-</main>
+    <table>
+        <tr>
+            <th>Jornada</th>
+            <th>Local</th>
+            <th>Visitante</th>
+            <th>Fecha</th>
+            <th>Ubicación</th>
+            <th>Acceso</th>
+        </tr>
 
-<footer>
-<p>teamcantodelpadel.github.io</p>
-</footer>
+        <tr><td>1</td><td>PADEL CHARRO B</td><td>El Canto del Pádel</td><td>07/02/2026 - 14:00</td><td>Padel Charro</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=1&Partido=3&Grupo=31090">Ver jornada</a></td></tr>
+
+        <tr><td>2</td><td>El Canto del Pádel</td><td>TABLEROS GARCÍA MARTÍN</td><td>21/02/2026 - 17:00</td><td>El Canto del Pádel</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=2&Partido=6&Grupo=31090">Ver jornada</a></td></tr>
+
+        <tr><td>3</td><td>C.D. BOECILLO-ARENIZATE</td><td>El Canto del Pádel</td><td>01/03/2026 - 12:00</td><td>PADEL ARENA</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=3&Partido=8&Grupo=31090">Ver jornada</a></td></tr>
+
+        <tr><td>4</td><td>El Canto del Pádel</td><td>UNSTOPPABLE COLLECTION</td><td>07/03/2026 - 17:00</td><td>El Canto del Pádel</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=4&Partido=11&Grupo=31090">Ver jornada</a></td></tr>
+
+        <tr><td>5</td><td>TENIS&PADEL2000</td><td>El Canto del Pádel</td><td>15/03/2026 - 17:00</td><td>CDSM San Isidro</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=5&Partido=13&Grupo=31090">Ver jornada</a></td></tr>
+
+        <tr><td>6</td><td>El Canto del Pádel</td><td>PADEL CHARRO B</td><td>21/03/2026 - 17:00</td><td>El Canto del Pádel</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=6&Partido=18&Grupo=31090">Ver jornada</a></td></tr>
+
+        <tr><td>7</td><td>TABLEROS GARCIA MARTIN</td><td>El Canto del Pádel</td><td>12/04/2026 - 12:00</td><td>Padel Live Indoor</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=7&Partido=21&Grupo=31090">Ver jornada</a></td></tr>
+
+        <tr><td>8</td><td>El Canto del Pádel</td><td>C.D. BOECILLO-ARENIZATE</td><td>18/04/2026 - 17:00</td><td>El Canto del Pádel</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=8&Partido=23&Grupo=31090">Ver jornada</a></td></tr>
+
+        <tr><td>9</td><td>UNSTOPPABLE COLLECTION</td><td>El Canto del Pádel</td><td>10/05/2026 - 12:30</td><td>Padel Arena Valladolid</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=9&Partido=26&Grupo=31090">Ver jornada</a></td></tr>
+
+        <tr><td>10</td><td>El Canto del Pádel</td><td>TENIS&PADEL2000</td><td>23/05/2026 - 17:00</td><td>El Canto del Pádel</td>
+            <td><a class="btn" href="Ligas_Detalle.asp?Liga=27991&Jornada=10&Partido=28&Grupo=31090">Ver jornada</a></td></tr>
+    </table>
+
+    <h2>📊 Clasificación</h2>
+    <iframe src="https://padelfederacion.es/Paginas/CYL/Ligas_Clasificacion.asp?Liga=27991&Grupo=31090"></iframe>
+
+</div>
+
 </body>
 </html>
