@@ -3,50 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>El Canto del Pádel - Liga PADELCYL 2026</title>
-
   <style>
     :root{
-      --verde:#009739;
-      --bg:#f5f5f5;
-      --borde:#ccc;
-      --head-bg:#e8f3ff;
+      --verde:#009739; --bg:#f5f5f5; --borde:#ccc; --head:#e8f3ff;
     }
     body{font-family:Arial, sans-serif;background:var(--bg);margin:0;}
     header{background:var(--verde);color:#fff;padding:20px;text-align:center;}
     h2{color:var(--verde);border-bottom:2px solid var(--verde);padding-bottom:5px;margin-top:10px;}
     .container{width:95%;max-width:1100px;margin:auto;background:#fff;padding:16px 14px 24px;box-sizing:border-box;}
 
-    /* --- tabla --- */
+    /* Tabla */
     .table-wrap{width:100%;overflow-x:auto;}
-    table{width:100%;border-collapse:collapse;margin-bottom:16px;min-width:640px;}
-    th,td{border:1px solid var(--borde);padding:10px;text-align:left;font-size:14px;white-space:nowrap;}
-    th{background:var(--head-bg);}
-    .btn{background:var(--verde);color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;font-size:14px;display:inline-block;}
-    .logo{width:160px;max-width:40%;margin-bottom:10px;}
+    table{width:100%;border-collapse:collapse;margin-bottom:16px;min-width:680px;}
+    th,td{border:1px solid var(--borde);padding:8px 10px;text-align:left;font-size:13px;white-space:nowrap;}
+    th{background:var(--head);}
+    .btn{background:var(--verde);color:#fff;padding:6px 10px;border-radius:6px;text-decoration:none;font-size:12px;display:inline-block;}
+    .logo{width:150px;max-width:40%;margin-bottom:10px;}
+    a.map{color:#1166cc;text-decoration:underline;}
 
-    /* ====== MÓVIL: compactar tabla ====== */
+    /* Móvil */
     @media (max-width:600px){
-      /* Hacemos la tabla más estrecha para evitar scroll horizontal en muchos casos */
       table{min-width:100%;}
-
-      /* Reducir tipografía y paddings */
-      th,td{font-size:13px;padding:8px;}
-
-      /* Ocultar la columna Ubicación (5ª) en móvil */
-      th:nth-child(5), td:nth-child(5){display:none;}
-
-      /* Cambiar el texto del encabezado 'Jornada' -> 'J'
-         En el HTML envolvemos el texto con <span class="full"> y <span class="abbr"> */
+      th,td{font-size:12px;padding:6px 8px;}
+      .btn{padding:6px 10px;font-size:12px;}
+      /* Encabezado “Jornada” -> “J” en móvil */
       th .abbr{display:inline;}
       th .full{display:none;}
-
-      /* Botón más compacto */
-      .btn{padding:6px 10px;font-size:12px;}
     }
-
-    /* ====== ESCRITORIO/TABLET: títulos completos ====== */
     @media (min-width:601px){
       th .abbr{display:none;}
       th .full{display:inline;}
@@ -56,7 +40,6 @@
 <body>
 
 <header>
-  <!-- tu logo -->
   <img src="logo.png" class="logo" alt="Logo El Canto del Pádel">
   <h1>EL CANTO DEL PÁDEL</h1>
   <h3>Liga PADELCYL 2026</h3>
@@ -70,76 +53,180 @@
     <table>
       <thead>
         <tr>
-          <!-- Cabecera con versión larga y abreviada -->
-          <th>
-            <span class="full">Jornada</span>
-            <span class="abbr">J</span>
-          </th>
+          <th><span class="full">Jornada</span><span class="abbr">J</span></th>
           <th>Local</th>
           <th>Visitante</th>
           <th>Fecha</th>
-          <!-- Esta columna se oculta en móvil por CSS -->
           <th>Ubicación</th>
           <th>Acceso</th>
         </tr>
       </thead>
       <tbody>
+        <!-- J1 -->
         <tr>
-          <td>1</td><td>PADEL CHARRO B</td><td>El Canto del Pádel</td><td>07/02/2026 - 14:00</td><td>Padel Charro</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=1&Partido=3&Grupo=31090">Ver</a></td>
+          <td>1</td>
+          <td>PADEL CHARRO B</td>
+          <td>El Canto del Pádel</td>
+          <td>07/02/2026 - 14:00</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=Avenida+de+Lasalle+173%2C+37008+Salamanca">Padel Charro</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=1&Partido=3&Grupo=31090">Ver</a>
+          </td>
         </tr>
 
+        <!-- J2 -->
         <tr>
-          <td>2</td><td>El Canto del Pádel</td><td>TABLEROS GARCÍA MARTÍN</td><td>21/02/2026 - 17:00</td><td>El Canto del Pádel</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=2&Partido=6&Grupo=31090">Ver</a></td>
+          <td>2</td>
+          <td>El Canto del Pádel</td>
+          <td>TABLEROS GARCÍA MARTÍN</td>
+          <td>21/02/2026 - 17:00</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=Calle+Pisuerga+2%2C+37185+Villamayor">El Canto del Pádel</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=2&Partido=6&Grupo=31090">Ver</a>
+          </td>
         </tr>
 
+        <!-- J3 -->
         <tr>
-          <td>3</td><td>C.D. BOECILLO-ARENIZATE</td><td>El Canto del Pádel</td><td>01/03/2026 - 12:00</td><td>PADEL ARENA</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=3&Partido=8&Grupo=31090">Ver</a></td>
+          <td>3</td>
+          <td>C.D. BOECILLO-ARENIZATE</td>
+          <td>El Canto del Pádel</td>
+          <td>01/03/2026 - 12:00</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=N-601+Km+184%2C+47008+Valladolid">PADEL ARENA</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=3&Partido=8&Grupo=31090">Ver</a>
+          </td>
         </tr>
 
+        <!-- J4 -->
         <tr>
-          <td>4</td><td>El Canto del Pádel</td><td>UNSTOPPABLE COLLECTION</td><td>07/03/2026 - 17:00</td><td>El Canto del Pádel</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=4&Partido=11&Grupo=31090">Ver</a></td>
+          <td>4</td>
+          <td>El Canto del Pádel</td>
+          <td>UNSTOPPABLE COLLECTION</td>
+          <td>07/03/2026 - 17:00</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=Calle+Pisuerga+2%2C+37185+Villamayor">El Canto del Pádel</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=4&Partido=11&Grupo=31090">Ver</a>
+          </td>
         </tr>
 
+        <!-- J5 -->
         <tr>
-          <td>5</td><td>TENIS&PADEL2000</td><td>El Canto del Pádel</td><td>15/03/2026 - 17:00</td><td>CDSM San Isidro</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=5&Partido=13&Grupo=31090">Ver</a></td>
+          <td>5</td>
+          <td>TENIS&PADEL2000</td>
+          <td>El Canto del Pádel</td>
+          <td>15/03/2026 - 17:00</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=P%C3%A1ramo+de+San+Isidro+1A%2C+47012+Valladolid">CDSM San Isidro</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=5&Partido=13&Grupo=31090">Ver</a>
+          </td>
         </tr>
 
+        <!-- J6 -->
         <tr>
-          <td>6</td><td>El Canto del Pádel</td><td>PADEL CHARRO B</td><td>21/03/2026 - 17:00</td><td>El Canto del Pádel</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=6&Partido=18&Grupo=31090">Ver</a></td>
+          <td>6</td>
+          <td>El Canto del Pádel</td>
+          <td>PADEL CHARRO B</td>
+          <td>21/03/2026 - 17:00</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=Calle+Pisuerga+2%2C+37185+Villamayor">El Canto del Pádel</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=6&Partido=18&Grupo=31090">Ver</a>
+          </td>
         </tr>
 
+        <!-- J7 -->
         <tr>
-          <td>7</td><td>TABLEROS GARCIA MARTIN</td><td>El Canto del Pádel</td><td>12/04/2026 - 12:00</td><td>Padel Live Indoor</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=7&Partido=21&Grupo=31090">Ver</a></td>
+          <td>7</td>
+          <td>TABLEROS GARCIA MARTIN</td>
+          <td>El Canto del Pádel</td>
+          <td>12/04/2026 - 12:00</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=Calle+Brezo+25%2C+47162+Aldeamayor+de+San+Mart%C3%ADn">Padel Live Indoor</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=7&Partido=21&Grupo=31090">Ver</a>
+          </td>
         </tr>
 
+        <!-- J8 -->
         <tr>
-          <td>8</td><td>El Canto del Pádel</td><td>C.D. BOECILLO-ARENIZATE</td><td>18/04/2026 - 17:00</td><td>El Canto del Pádel</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=8&Partido=23&Grupo=31090">Ver</a></td>
+          <td>8</td>
+          <td>El Canto del Pádel</td>
+          <td>C.D. BOECILLO-ARENIZATE</td>
+          <td>18/04/2026 - 17:00</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=Calle+Pisuerga+2%2C+37185+Villamayor">El Canto del Pádel</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=8&Partido=23&Grupo=31090">Ver</a>
+          </td>
         </tr>
 
+        <!-- J9 -->
         <tr>
-          <td>9</td><td>UNSTOPPABLE COLLECTION</td><td>El Canto del Pádel</td><td>10/05/2026 - 12:30</td><td>Padel Arena Valladolid</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=9&Partido=26&Grupo=31090">Ver</a></td>
+          <td>9</td>
+          <td>UNSTOPPABLE COLLECTION</td>
+          <td>El Canto del Pádel</td>
+          <td>10/05/2026 - 12:30</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=N-601+Km+184%2C+47008+Valladolid">Padel Arena Valladolid</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=9&Partido=26&Grupo=31090">Ver</a>
+          </td>
         </tr>
 
+        <!-- J10 -->
         <tr>
-          <td>10</td><td>El Canto del Pádel</td><td>TENIS&PADEL2000</td><td>23/05/2026 - 17:00</td><td>El Canto del Pádel</td>
-          <td><a class="btn" href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=10&Partido=28&Grupo=31090">Ver</a></td>
+          <td>10</td>
+          <td>El Canto del Pádel</td>
+          <td>TENIS&PADEL2000</td>
+          <td>23/05/2026 - 17:00</td>
+          <td>
+            <a class="map" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=Calle+Pisuerga+2%2C+37185+Villamayor">El Canto del Pádel</a>
+          </td>
+          <td>
+            <a class="btn" target="_blank"
+               href="https://padelfederacion.es/Paginas/CYL/Ligas_Detalle.asp?Liga=27991&Jornada=10&Partido=28&Grupo=31090">Ver</a>
+          </td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <h2>📊 Clasificación</h2>
-<iframe src="https://padelfederacion.es/Paginas/CYL/Ligas_Clasificacion.asp?Liga=27991&Grupo=31090" width="100%" height="600" title="Clasificación"></iframe>
- 
+  <iframe src="https://padelfederacion.es/Paginas/CYL/Ligas_Clasificacion.asp?Liga=27991&Grupo=31090" title="Clasificación"></iframe>
 
 </div>
 </body>
